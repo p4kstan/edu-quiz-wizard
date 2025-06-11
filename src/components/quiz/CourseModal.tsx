@@ -97,14 +97,14 @@ Formação Escolhida: ${course.label}
     // Open WhatsApp
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
     
-    // Call GTM function
-    if (typeof window.DispararGTM === 'function') {
+    // Call GTM function with proper type checking
+    if (window.DispararGTM && typeof window.DispararGTM === 'function') {
       window.DispararGTM();
     }
     
-    // Call EnviarActive if available
-    if (typeof (window as any).EnviarActive === 'function') {
-      (window as any).EnviarActive();
+    // Call EnviarActive if available with proper type checking
+    if (window.EnviarActive && typeof window.EnviarActive === 'function') {
+      window.EnviarActive();
     }
 
     onSuccess();
