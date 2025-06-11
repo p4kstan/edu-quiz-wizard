@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Quiz Educacional - Soluções Educacionais</title>
+    <meta name="description" content="Quiz Educacional para Soluções Acadêmicas">
+    <meta name="author" content="Soluções Educacionais">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),
+                dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T7TP7N3B');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),
+                dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M52H89NQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- WORDPRESS Integration -->
+    <script>
+        if (typeof jQuery !== 'undefined') {
+            jQuery(document).ready(function($) {
+                $(document).on('submit_success', function(evt) {
+                    dataLayer.push({
+                        'event': 'form_submit'
+                    });
+                });
+            });
+        }
+    </script>
+
+    <!-- GREATPAGES Integration -->
+    <script>
+        window.DispararGTM = function() {
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({'event':'gtm.formSubmit'});
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M52H89NQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7TP7N3B" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="quiz-container">
+        <!-- Header -->
+        <div class="quiz-header">
+            <div class="container">
+                <h1>Quiz Educacional</h1>
+                <p>Descubra a formação ideal para seu futuro</p>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-text">
+                <span id="current-step">1</span> de 3
+            </div>
+        </div>
+
+        <!-- Quiz Content -->
+        <div class="quiz-content">
+            <!-- Step 1 -->
+            <div class="quiz-step active" id="step-1">
+                <div class="step-content">
+                    <h2>Qual o seu nível de formação atual?</h2>
+                    <p>Em que etapa da sua jornada acadêmica você se encontra?</p>
+                    
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Estudantes em ambiente acadêmico">
+                    </div>
+
+                    <div class="options-grid">
+                        <div class="option-card" data-value="educacao-basica">
+                            <div class="option-icon blue">📚</div>
+                            <h3>Educação Básica</h3>
+                            <p>Ensino Fundamental ou Médio</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="graduacao">
+                            <div class="option-icon green">🎓</div>
+                            <h3>Graduação</h3>
+                            <p>Bacharelado, Licenciatura ou Tecnólogo</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="pos-graduacao-mba">
+                            <div class="option-icon purple">🏆</div>
+                            <h3>Pós-Graduação</h3>
+                            <p>MBA ou Especialização</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="pos-graduacao-stricto">
+                            <div class="option-icon orange">👥</div>
+                            <h3>Pós-Graduação</h3>
+                            <p>Mestrado ou Doutorado</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="curso-tecnico">
+                            <div class="option-icon indigo">🔧</div>
+                            <h3>Curso Técnico</h3>
+                            <p>Formação técnica especializada</p>
+                            <div class="radio-button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="quiz-step" id="step-2">
+                <div class="step-content">
+                    <h2>Qual o seu objetivo acadêmico?</h2>
+                    <p>Qual é a sua principal meta com essa formação?</p>
+                    
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Profissionais em desenvolvimento de carreira">
+                    </div>
+
+                    <div class="options-grid">
+                        <div class="option-card" data-value="concursos-publicos">
+                            <div class="option-icon blue">🎯</div>
+                            <h3>Prestar concursos públicos</h3>
+                            <p>Estabilidade e carreira no setor público</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="crescimento-carreira">
+                            <div class="option-icon green">📈</div>
+                            <h3>Crescimento na carreira</h3>
+                            <p>Promoções e melhores oportunidades</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="melhor-colocacao">
+                            <div class="option-icon purple">👥</div>
+                            <h3>Melhor colocação no mercado</h3>
+                            <p>Competitividade profissional</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="ingressar-pos">
+                            <div class="option-icon orange">🎓</div>
+                            <h3>Ingressar em uma pós</h3>
+                            <p>Continuidade dos estudos acadêmicos</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="validacao-internacional">
+                            <div class="option-icon indigo">🌍</div>
+                            <h3>Validação internacional</h3>
+                            <p>Reconhecimento global da formação</p>
+                            <div class="radio-button"></div>
+                        </div>
+                        
+                        <div class="option-card" data-value="reconhecimento-profissional">
+                            <div class="option-icon red">🏆</div>
+                            <h3>Reconhecimento profissional</h3>
+                            <p>Credibilidade e expertise na área</p>
+                            <div class="radio-button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="quiz-step" id="step-3">
+                <div class="step-content">
+                    <h2>Qual formação você deseja iniciar?</h2>
+                    <p>Agora selecione abaixo a formação que você deseja iniciar:</p>
+                    
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Formação acadêmica e certificados">
+                    </div>
+
+                    <div class="courses-grid">
+                        <div class="course-option" data-course="ensino-medio">
+                            <div class="course-card">
+                                <div class="course-icon blue">📚</div>
+                                <h3>📚 Ensino Médio</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero ensino médio" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: Ensino Médio Regular ou EJA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-option" data-course="tecnico">
+                            <div class="course-card">
+                                <div class="course-icon green">🛠️</div>
+                                <h3>🛠️ Técnico</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero técnico" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: Técnico em Enfermagem, Técnico em Informática</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-option" data-course="tecnologo">
+                            <div class="course-card">
+                                <div class="course-icon purple">💼</div>
+                                <h3>💼 Tecnólogo</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero tecnólogo" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: Tecnólogo em Logística, RH</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-option" data-course="graduacao">
+                            <div class="course-card">
+                                <div class="course-icon orange">🎓</div>
+                                <h3>🎓 Graduação</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero graduação" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: Graduação em Direito, Psicologia, Administração</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-option" data-course="pos-graduacao">
+                            <div class="course-card">
+                                <div class="course-icon red">📈</div>
+                                <h3>📈 Pós-Graduação</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero pós-graduação" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: MBA em Gestão de Projetos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-option" data-course="mestrado">
+                            <div class="course-card">
+                                <div class="course-icon indigo">🔬</div>
+                                <h3>🔬 Mestrado</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero mestrado" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: Mestrado em Educação</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-option" data-course="doutorado">
+                            <div class="course-card">
+                                <div class="course-icon pink">🧠</div>
+                                <h3>🧠 Doutorado</h3>
+                                <p>Clique para mais informações</p>
+                            </div>
+                            <div class="warning-box">
+                                <span class="warning-icon">⚠️</span>
+                                <div>
+                                    <p><strong>IMPORTANTE!</strong></p>
+                                    <p><span style="color: red;">❌</span> Respostas genéricas como "Quero doutorado" NÃO serão aceitas.</p>
+                                    <p><span style="color: green;">✅</span> Seja específico: Ex: Doutorado em Ciências Jurídicas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Page -->
+            <div class="quiz-step" id="success-page">
+                <div class="success-content">
+                    <div class="success-icon">✅</div>
+                    <h1>🎉 Parabéns!</h1>
+                    
+                    <div class="success-message">
+                        <p>📲 Todos os dados foram enviados com sucesso para o atendimento via WhatsApp:</p>
+                        <div class="whatsapp-number">
+                            📱 +62 838-7107-2811
+                        </div>
+                    </div>
+
+                    <div class="next-steps">
+                        <h3>🚀 Próximos Passos:</h3>
+                        <ul>
+                            <li>✓ Aguarde o contato da nossa equipe em até 24 horas</li>
+                            <li>✓ Tenha seus documentos básicos em mãos</li>
+                            <li>✓ Prepare suas dúvidas sobre o processo</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info">
+                        <p><strong>📧 Dúvidas? Entre em contato:</strong></p>
+                        <p>Estamos sempre prontos para ajudar você!</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon blue">✅</div>
+                            <h4>Processo Seguro</h4>
+                            <p>Documentação válida e reconhecida pelo MEC</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon green">📱</div>
+                            <h4>Suporte Completo</h4>
+                            <p>Atendimento personalizado do início ao fim</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon yellow">💬</div>
+                            <h4>Resposta Rápida</h4>
+                            <p>Retorno em até 24 horas úteis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button id="back-btn" class="btn-secondary" style="display: none;">⬅️ Voltar</button>
+            <button id="next-btn" class="btn-primary" style="display: none;">Avançar ➡️</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Suporte educacional completo e personalizado</h3>
+                <p>Sua jornada educacional começa aqui. Oferecemos soluções completas para todas as suas necessidades acadêmicas e profissionais.</p>
+                
+                <div class="footer-links">
+                    <a href="#">🛡️ Política de Privacidade</a>
+                    <a href="#">📄 Termos de Uso</a>
+                    <a href="#">🍪 Política de Cookies</a>
+                    <a href="#">⚖️ LGPD – Lei 13.709/2018</a>
+                </div>
+                
+                <div class="lgpd-info">
+                    <p><strong>⚖️ Conforme a LGPD – Lei 13.709/2018</strong></p>
+                    <p>Seus dados pessoais são tratados de acordo com a Lei Geral de Proteção de Dados. Garantimos total segurança e privacidade das suas informações.</p>
+                </div>
+                
+                <div class="copyright">
+                    <p>© 2025 Soluções Educacionais. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
